@@ -1,0 +1,10 @@
+# Reference: https://cirrus-ci.org/guide/writing-tasks/
+# Validation: ruby -ryaml -e 'puts (YAML.load_file ".cirrus.yml")'
+
+env:
+  ACCESS_KEY: "ENCRYPTED[]"
+
+task:
+  container:
+    image: hairyhenderson/figlet:latest
+  print_access_key_script: figlet "${ACCESS_KEY?}"
