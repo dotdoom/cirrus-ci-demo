@@ -7,4 +7,4 @@ env:
 task:
   container:
     image: hairyhenderson/figlet:latest
-  print_access_key_script: figlet "${ACCESS_KEY?}"
+  print_access_key_script: figlet hello
