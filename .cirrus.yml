@@ -2,7 +2,7 @@
 # Validation: ruby -ryaml -e 'puts (YAML.load_file ".cirrus.yml")'
 
 env:
-  ACCESS_KEY: "ENCRYPTED[]"
+  ACCESS_KEY: "ENCRYPTED[4d4004e87958ec8f7027a69d40c885aab5132838526147bcad2f65046991b7fb30f3acdc4b587055f6492841004e859c]"
 
 task:
   container:
